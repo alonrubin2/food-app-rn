@@ -3,15 +3,15 @@ import { View, Text, StyleSheet } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import { TextInput } from 'react-native-gesture-handler';
 
-const SearchBar = ({term, onTermChange, onTermSubmit}) => {
+const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
     return (
         <View style={styles.background}>
-            <TextInput 
-            style={styles.search} 
-            placeholder="Search" 
-            value={term}
-            onChangeText={onTermChange}
-            onEndEditing={onTermSubmit}
+            <TextInput
+                style={styles.search}
+                placeholder="Search"
+                value={term}
+                onChangeText={onTermChange}
+                onEndEditing={onTermSubmit}
             />
             <AntDesign style={styles.iconStyle} name="search1" size={32} color="black" />
         </View>
